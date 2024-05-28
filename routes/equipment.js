@@ -2,24 +2,13 @@ var express = require('express');
 var router = express.Router();
 var equipmentController =  require('../controllers/equipmentController');
 
-router.get('/', function(req, res, next) {
+router.route('/')
+    .get(equipmentController.getAllEquipment)
+    .post(equipmentController.addEquipment);
 
-});
-
-router.post('/', function(res, req, next) {
-
-});
-
-router.get('/:id', function(req, res, next) {
-
-});
-
-router.put('/:id', function(req, res, next) {
-
-});
-
-router.delete('/:id', function(req, res, next) {
-
-});
+router.route('/:id')
+    .get(equipmentController.getEquipment)
+    .put(equipmentController.updateEquipment)
+    .delete(equipmentController.deleteEquipment);
 
 module.exports = router;
