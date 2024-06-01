@@ -27,6 +27,17 @@ const deleteUser = (req, res) => {
 
 }
 
+const typeMap = {
+    "Users": o([
+        { json: "id", js: "id", typ: "" },
+        { json: "name", js: "name", typ: "" },
+        { json: "e-mail", js: "e-mail", typ: "" },
+        { json: "role", js: "role", typ: "" },
+        { json: "password", js: "password", typ: "" },
+        { json: "registryDate", js: "registryDate", typ: "Date" },
+    ], false),
+};
+
 module.exports = {
     getAllUsers,
     addUser,

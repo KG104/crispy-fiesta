@@ -27,6 +27,16 @@ const deleteBorrow = (req, res) => {
 
 }
 
+const typeMap = {
+    "Borrows": o([
+        { json: "id", js: "id", typ: "" },
+        { json: "borrowerID", js: "borrowerID", typ: "" },
+        { json: "borrowDate", js: "borrowDate", typ: Date },
+        { json: "returnDate", js: "returnDate", typ: Date },
+        { json: "equipmentID", js: "equipmentID", typ: "" },
+    ], false),
+};
+
 module.exports = {
     getAllBorrows,
     addBorrow,
