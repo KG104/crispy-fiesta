@@ -27,7 +27,7 @@ const deleteEquipment = (req, res) => {
 
 }
 
-const typeMap = {
+/*const typeMap = {
     "Equipment": o([
         { json: "id", js: "id", typ: "" },
         { json: "number", js: "number", typ: 0 },
@@ -37,7 +37,7 @@ const typeMap = {
         { json: "availableCount", js: "availableCount", typ: 0 },
         { json: "ownerID", js: "ownerID", typ: "" },
     ], false),
-};
+};*/
 
 module.exports = {
     getAllEquipment,

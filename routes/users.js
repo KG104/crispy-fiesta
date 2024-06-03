@@ -3,12 +3,12 @@ var router = express.Router();
 var usersController = require('../controllers/usersController');
 
 router.route('/')
-    .get(borrowsController.getAllBorrows)
-    .post(borrowsController.addBorrow);
+    .get(usersController.getAllUsers)
+    .post(usersController.addUser);
 
 router.route('/:id')
-    .get(borrowsController.getBorrow)
-    .put(borrowsController.updateBorrow)
-    .delete(borrowsController.deleteBorrow);
+    .get(usersController.getUser)
+    .put(usersController.updateUser)
+    .delete(usersController.deleteUser);
 
 module.exports = router;
