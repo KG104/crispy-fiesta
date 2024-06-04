@@ -1,1 +1,26 @@
-{}
+[
+  {
+    "userID": "19e95b52-39c6-4ff6-9c07-7534f349f830",
+    "name": "Benjamin Bluemchen",
+    "email": "benjamin.bluemchen@elefant.de",
+    "role": "user",
+    "password": "1234",
+    "registryDate": "1977-01-01"
+  },
+  {
+    "userID": "35ae8e59-9253-43df-994c-44dd6eb1e41b",
+    "name": "Anton Anonym",
+    "email": "anton.anonym@email.com",
+    "role": "user",
+    "password": "geheim",
+    "registryDate": "2020-11-20"
+  },
+  {
+    "userID": "93c22033-387a-460b-af0e-7d21caa532da",
+    "name": "Gigachad",
+    "email": "giga.chad@alpha.com",
+    "role": "admin",
+    "password": "you will never know",
+    "registryDate": "2023-03-15"
+  }
+]
