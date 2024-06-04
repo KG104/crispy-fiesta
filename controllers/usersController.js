@@ -1,6 +1,11 @@
 const fs = require('fs');
+const crypto = require('crypto');
 // read data from json file
 let users = JSON.parse(fs.readFileSync('./models/users.json'));
+
+function generateID() {
+    return crypto.randomUUID();
+}
 
 // get all of the users
 const getAllUsers = (req, res) => {
@@ -9,7 +14,7 @@ const getAllUsers = (req, res) => {
 
 // add a new user
 const addUser = (req, res) => {
-
+    id = generateID();
 }
 
 // get one specific user by their id

@@ -1,6 +1,11 @@
 const fs = require('fs');
+const crypto = require('crypto');
 // read data from json file
 let blogs = JSON.parse(fs.readFileSync('./models/equipment.json'));
+
+function generateID() {
+    return crypto.randomUUID();
+}
 
 // get all of the equipment
 const getAllEquipment = (req, res) => {
@@ -9,7 +14,7 @@ const getAllEquipment = (req, res) => {
 
 // add a new piece of equipment
 const addEquipment = (req, res) => {
-
+    id = generateID();
 }
 
 // get one piece of equipment by its id

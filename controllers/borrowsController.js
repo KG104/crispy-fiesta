@@ -2,6 +2,10 @@ const fs = require('fs');
 // read data from json file
 let blogs = JSON.parse(fs.readFileSync('./models/borrows.json'));
 
+function generateID() {
+    return crypto.randomUUID();
+}
+
 // get all of the borrows
 const getAllBorrows = (req, res) => {
 
@@ -9,7 +13,7 @@ const getAllBorrows = (req, res) => {
 
 // add a new borrow
 const addBorrow = (req, res) => {
-
+    id = generateID();
 }
 
 // get one specific borrow by its id
