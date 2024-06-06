@@ -22,5 +22,29 @@
     "role": "admin",
     "password": "you will never know",
     "registryDate": "2023-03-15"
+  },
+  {
+    "userID": "f2d1be9f-a0f2-4935-ae43-268e5231ca84",
+    "name": "Bruce Wayne",
+    "email": "bruce-wayne@wayne-enterprises.com",
+    "role": "admin",
+    "password": "IamBatman",
+    "registryDate": "2024-06-06T12:58:48.930Z"
+  },
+  {
+    "userID": "fea197f3-b215-45f5-9780-3454056e6911",
+    "name": "Tony Stark",
+    "email": "iron-man@avengers.hero",
+    "role": "user",
+    "password": "",
+    "registryDate": "2024-06-06T13:07:58.720Z"
+  },
+  {
+    "userID": "c446bc0b-1bb6-494e-add2-0c186a473937",
+    "name": "Erika Mustermann",
+    "email": "erika-mustermann@gmx.de",
+    "role": "user",
+    "password": "4959bc0fd566c13f87dba662b9b6ac965cb1f4c52472c87f5c0dce43d608c726c1fc2843ae99a10880bb62bc44bfb3e35a9c4c23ffcc20bcbe48044ae2845bb4",
+    "registryDate": "2024-06-06T13:21:12.121Z"
   }
 ]
