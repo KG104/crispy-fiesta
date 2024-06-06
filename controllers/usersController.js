@@ -22,8 +22,10 @@ const getAllUsers = (req, res) => {
 // add a new user
 const addUser = (req, res) => {
     var id = generateID();
-    var registryDate = new Date();
+    // get current Date
+    var currentDate = new Date();
     var requiredFields = ['name', 'email', 'role', 'password'];
+    // check if all the required fields are submitted
     if (requiredFields.every(field => req.body[field])) {
         let user = {
             userID: id,
@@ -31,7 +33,7 @@ const addUser = (req, res) => {
             email: req.body.email,
             role: req.body.role,
             password: req.body.password,
-            registryDate: registryDate
+            registryDate: currentDate
         }
         // save password as hexadecimal hash value
         user.password = generateHash(user.password).toString('hex');

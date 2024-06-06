@@ -8,6 +8,7 @@ Valentin Sprioski:
 
 
 Konstantin Gerlach:
+usersController.js
 
 
 # Anforderungen und deren Umsetzung:
@@ -15,3 +16,5 @@ Konstantin Gerlach:
 # Test-Daten:
 
 # Abgedeckte Fehlerfälle:
+- Zugriffsversuch auf ID, die nicht existiert (GET, PUT und DELETE)
+- Erstellung eines Nutzers mit unvollständigen Daten
