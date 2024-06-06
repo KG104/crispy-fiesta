@@ -10,6 +10,7 @@ function generateID() {
 
 // get all of the users
 const getAllUsers = (req, res) => {
+    users = JSON.parse(fs.readFileSync('./models/users.json'));
     res.json(users);
 }
 
@@ -33,20 +34,20 @@ const addUser = (req, res) => {
 // get one specific user by their id
 const getUser = (req, res) => {
     users = JSON.parse(fs.readFileSync('./models/users.json'));
-    searchedUser = users.filter(element => element.userID === req.params.id);
+    var searchedUser = users.find(element => element.userID === req.params.id);
     // if the user could be found
-    if(searchedUser) res.status(200).json(searchedUser);
+    if (searchedUser !== undefined) res.status(200).json(searchedUser);
     else res.status(404).send("User could not be found ):");
 }
 
 // update one specific user by their id
 const updateUser = (req, res) => {
     users = JSON.parse(fs.readFileSync('./models/users.json'));
-    let userToUpdate = users.find(element => element.userID == req.params.id);
+    var userToUpdate = users.find(element => element.userID == req.params.id);
+    console.log(users);
     // if a user with this id exists
-    if (userToUpdate) {
+    if (userToUpdate !== undefined) {
         // update the keys
-        userToUpdate.userID = req.params.userID;
         userToUpdate.name = req.body.name;
         userToUpdate.email = req.body.email;
         userToUpdate.role = req.body.role;
