@@ -33,15 +33,16 @@ const addUser = (req, res) => {
 // get one specific user by their id
 const getUser = (req, res) => {
     users = JSON.parse(fs.readFileSync('./models/users.json'));
-    searchedUser = users.filter(element => element.userID === element.id);
+    searchedUser = users.filter(element => element.userID === req.params.id);
     // if the user could be found
-    if(searchedUser) res.json(searchedUser);
+    if(searchedUser) res.status(200).json(searchedUser);
     else res.status(404).send("User could not be found ):");
 }
 
 // update one specific user by their id
 const updateUser = (req, res) => {
-    let userToUpdate = blogs.find(element => element.userID == req.params.id);
+    users = JSON.parse(fs.readFileSync('./models/users.json'));
+    let userToUpdate = users.find(element => element.userID == req.params.id);
     // if a user with this id exists
     if (userToUpdate) {
         // update the keys
@@ -51,7 +52,7 @@ const updateUser = (req, res) => {
         userToUpdate.role = req.body.role;
         userToUpdate.password = req.body.password;
         userToUpdate.registryDate = req.body.registryDate;
-        fs.writeFileSync('./models/blog.json', JSON.stringify(users, null, 2));
+        fs.writeFileSync('./models/users.json', JSON.stringify(users, null, 2));
         res.status(200).json(users);
     } else res.status(404).send("Der gesuchte User existiert nicht ):");
 }
