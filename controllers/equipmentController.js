@@ -7,6 +7,22 @@ function generateID() {
     return crypto.randomUUID();
 }
 
+// Helper function for reading the equipment data
+function readEquipmentData() {
+    const data = fs.readFileSync('./models/equipment.json');
+    return JSON.parse(data);
+}
+
+// Helper function for writing the equipment data
+function writeEquipmentData(data) {
+    fs.writeFileSync('./models/equipment.json', JSON.stringify(data, null, 2));
+}
+
+// Function to generate a unique ID
+function generateID() {
+    return crypto.randomUUID();
+}
+
 // get all of the equipment
 const getAllEquipment = (req, res) => {
 
