@@ -1,20 +1,47 @@
 [
-    {
-      "id": "1",
-      "number": 101,
-      "title": "Laptop",
-      "imagePath": "/images/laptop.png",
-      "description": "Ein leistungsstarker Laptop.",
-      "availableCount": 10,
-      "ownerID": "user1"
-    },
-    {
-      "id": "2",
-      "number": 102,
-      "title": "Beamer",
-      "imagePath": "/images/beamer.png",
-      "description": "Ein HD Beamer für Präsentationen.",
-      "availableCount": 5,
-      "ownerID": "user2"
-    }
-  ]
+  {
+    "id": "1",
+    "number": 101,
+    "title": "Laptop",
+    "imagePath": "/images/laptop.png",
+    "description": "Ein leistungsstarker Laptop.",
+    "availableCount": 10,
+    "ownerID": "user1"
+  },
+  {
+    "id": "2",
+    "number": 102,
+    "title": "Beamer",
+    "imagePath": "/images/beamer.png",
+    "description": "Ein HD Beamer für Präsentationen.",
+    "availableCount": 5,
+    "ownerID": "user2"
+  },
+  {
+    "id": "3",
+    "number": 103,
+    "title": "Smartphone",
+    "imagePath": "/images/smartphone.png",
+    "description": "Ein Smartphone mit 5G Unterstützung.",
+    "availableCount": 15,
+    "ownerID": "user3"
+  },
+  {
+    "id": "4",
+    "number": 104,
+    "title": "Tablet",
+    "imagePath": "/images/tablet.png",
+    "description": "Ein Tablet mit 12 Zoll Display.",
+    "availableCount": 20,
+    "ownerID": "user4"
+  },
+  {
+    "id": "5",
+    "number": 105,
+    "title": "Smartwatch",
+    "imagePath": "/images/smartwatch.png",
+    "description": "Eine Smartwatch mit Herzfrequenzmesser.",
+    "availableCount": 25,
+    "ownerID": "user5"
+  }
+]
