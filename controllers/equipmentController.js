@@ -85,6 +85,15 @@ const updateEquipment = (req, res) => {
 
 // delete one specific piece of equipment by its id
 const deleteEquipment = (req, res) => {
+    const equipment = readEquipmentData(); // Read all equipment items from the file
+    const updatedEquipment = equipment.filter(e => e.id !== req.params.id); // Filter out the equipment item with the specified ID
+    
+    if (equipment.length === updatedEquipment.length) { // If no equipment item with the specified ID is found
+        return res.status(404).json({ message: 'Equipment not found' }); // Send an error message
+    }
+
+    writeEquipmentData(updatedEquipment); // Write the updated equipment data back to the file
+    res.status(204).send(); // Send an empty response to confirm success
 
 }
 
