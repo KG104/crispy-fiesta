@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 const crypto = require('crypto');
 // read data from json file
@@ -87,4 +88,4 @@ module.exports = {
     getUser,
     updateUser,
     deleteUser
-}
+}}
