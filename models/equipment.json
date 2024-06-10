@@ -1,1 +1,20 @@
-[]
+[
+    {
+      "id": "1",
+      "number": 101,
+      "title": "Laptop",
+      "imagePath": "/images/laptop.png",
+      "description": "Ein leistungsstarker Laptop.",
+      "availableCount": 10,
+      "ownerID": "user1"
+    },
+    {
+      "id": "2",
+      "number": 102,
+      "title": "Beamer",
+      "imagePath": "/images/beamer.png",
+      "description": "Ein HD Beamer für Präsentationen.",
+      "availableCount": 5,
+      "ownerID": "user2"
+    }
+  ]
