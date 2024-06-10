@@ -25,12 +25,25 @@ function generateID() {
 
 // get all of the equipment
 const getAllEquipment = (req, res) => {
-
+    const equipment = readEquipmentData(); // Read all equipment items from the file
+    res.status(200).json(equipment); // Send the equipment items as JSON response
 }
 
 // add a new piece of equipment
 const addEquipment = (req, res) => {
-    id = generateID();
+    const newEquipment = {
+        id: generateID(), // Generate a unique ID for the new equipment item
+        number: req.body.number, // Read the equipment number from the request bodyS
+        title: req.body.title,
+        imagePath: req.body.imagePath || '',
+        description: req.body.description,
+        availableCount: req.body.availableCount,
+        ownerID: req.body.ownerID
+}; const equipment = readEquipmentData();
+equipment.push(newEquipment); // Add the new equipment item
+writeEquipmentData(equipment); // Write the updated equipment data back to the file
+
+res.status(201).json(newEquipment); // Send the new equipment item as JSON response
 }
 
 // get one piece of equipment by its id
