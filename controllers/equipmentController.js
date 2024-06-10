@@ -48,8 +48,16 @@ res.status(201).json(newEquipment); // Send the new equipment item as JSON respo
 
 // get one piece of equipment by its id
 const getEquipment = (req, res) => {
+    const equipment = readEquipmentData(); // Read all equipment items from the file
+    const item = equipment.find(e => e.id === req.params.id); // Find the equipment item with the specified ID
+    
+    if (!item) { // If no equipment item is found
+        return res.status(404).json({ message: 'Equipment not found' }); // Send an error message
+    }
 
+    res.status(200).json(item); // Send the found equipment item as JSON response
 }
+
 
 // update one specific piece of equipment by its id
 const updateEquipment = (req, res) => {
