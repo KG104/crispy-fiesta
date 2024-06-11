@@ -9,6 +9,7 @@ Valentin Sprioski:
  - equipmentController.js
 
 Konstantin Gerlach:
+- alle routes
 - usersController.js
 - users.json
 
