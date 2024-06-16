@@ -11,4 +11,13 @@ router.route('/:id')
     .put(equipmentController.updateEquipment)
     .delete(equipmentController.deleteEquipment);
 
+router.route('/:year')
+    .get(equipmentController.getEquipmentByYear);
+
+router.route('/:month')
+    .get(equipmentController.getEquipmentByMonth);
+
+ router.route('/:year-month')
+ .get(equipmentController.getEquipmentByMonth);
+
 module.exports = router;

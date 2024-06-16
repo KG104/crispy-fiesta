@@ -20,6 +20,7 @@ const addBorrow = (req, res) => {
     
     if (!userID || !borrowDate || !returnDate || !equipmentID) {
         return res.status(404).json({ message: "Incomplete data" });
+        return res.status(404).json({ message: "Incomplete data: userID, borrowDate, returnDate and equipmentID needed" });
     }
     
      const id = generateID();
