@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "borrowID": "5c109bc2-8d5c-4b48-a696-85f3fed0d24a",
+    "userID": "19e95b52-39c6-4ff6-9c07-7534f349f830",
+    "borrowDate": "2024-06-10",
+    "returnDate": "2024-07-10",
+    "equipmentID": "19e95b52-39c6-4ff6-9c07-7534f349f830"
+  },
+  {
+    "borrowID": "7f8f1160-11b7-4606-aed6-0913e8e0bc01",
+    "userID": "19e95b52-39c6-4ff6-9c07-7534f349f830",
+    "borrowDate": "2024-06-11",
+    "returnDate": "2024-07-11",
+    "equipmentID": "29e95b52-39c6-4ff6-9c07-7534f349f830"
+  }
+]

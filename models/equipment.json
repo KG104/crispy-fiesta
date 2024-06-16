@@ -43,5 +43,14 @@
     "description": "Eine Smartwatch mit Herzfrequenzmesser.",
     "availableCount": 25,
     "ownerID": "user5"
+  },
+  {
+    "id": "9c2ec3d4-3037-4f41-85a3-07c718b9f9cf",
+    "number": "134",
+    "title": "Schraubendreher",
+    "imagePath": "./public/images/schraubendreher",
+    "description": "dreht Schrauben",
+    "availableCount": "15",
+    "ownerID": "19e95b52-39c6-4ff6-9c07-7534f349f830"
   }
 ]
