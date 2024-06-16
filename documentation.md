@@ -25,6 +25,8 @@ Per Post soll ein neuer User hinzugefügt werden und per get sollen alle oder be
 ## Borrows:
 
 # Test-Daten:
+## Users:
+siehe users.json
 
 
 # Abgedeckte Fehlerfälle:
